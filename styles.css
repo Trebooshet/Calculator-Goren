@@ -1,0 +1,132 @@
+
+         * {
+            
+            box-sizing: border-box;}
+
+        body {
+            margin: 0;
+            padding-top: 1px;
+            height: 100vh;
+            background:radial-gradient(circle, #000000, #8d96a8 75%, #000000);
+            animation: back 10s ease-in-out infinite;
+        }
+
+        #calculator {
+            width: 450px;
+            padding-top: 10px;
+            height: 600px;
+            min-height: 90vh;
+            margin: 10vh auto;
+            background:linear-gradient(45deg, #939292, #606060, #a3a2a2);
+            margin: 30px auto;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px black;
+            transform-origin: 50% 50%;
+            animation: calculator 600ms ease-in-out forwards;;
+        }
+
+        #display {
+            background: linear-gradient(90deg, bisque 75%, #fbe27d);
+            padding: 0 10px;
+            font-size: 50px;
+            font-family: 'Courier New';
+            align-content: center; 
+            width: 88%;
+            height: 80px;
+            margin: 20px auto 20px;
+            border-radius: 10px; 
+            text-align: right;
+            box-shadow: inset 2px 2px 5px black;
+            overflow: auto;
+        }
+
+        #display img {
+            height: 55px;
+            margin-top: 15px;
+            margin-right: -6px;
+            filter: drop-shadow(3px 5px 5px rgba(139, 86, 0, 0.5));
+            animation: picachu 550ms ease-out 1ms 1 normal;
+        }
+
+
+        .row1, .row2, .row3, .row4, .row5 {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 12px;
+        }
+
+        button {
+            outline: none;
+            width: 100px;
+            height: 80px;
+            background-color: bisque;
+            border-radius: 10px;
+            box-shadow: 4px 2px 5px black;
+            text-align: center;
+            align-content: center;
+            font-size: 60px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            position: relative;
+            width: 100px;
+            height: 80px;
+
+        }
+
+        #charmander {
+            height: 55px;
+            position:absolute; 
+            transform: rotate(3deg);
+            left: 28px;
+            top: 11px;
+        }
+
+        #squirtle {
+            height: 55px;
+            position:absolute; 
+            transform: rotate(-5deg);
+            left: 190px;
+            top: 11px;
+        }
+
+        .hidden {
+            display: none;
+        }  
+
+        .clear_btn {
+            background-color: 	#FF8973;
+        }
+
+        .submit_btn {
+            background-color: 	#3F92D2;
+            width: 95%;
+        }
+
+        .operation_btn {
+            background-color: 	#FFD740;
+        }
+
+        button:active:not(.clear_btn, .submit_btn) {
+            background-color: rgb(252, 184, 95);
+        }
+            
+        button:hover {
+            cursor: pointer;
+        } 
+
+        @keyframes picachu {
+            0% { transform: translateX(100px)};
+            50% { transform: translateX(100px)};
+            75% { transform: translateX(50px)};
+            100% { transform: translateX(10px)};
+        }
+         
+        @keyframes calculator {
+            0% {transform: scale(0.7)};
+            100% {transform: scale(1)};
+        }
+
+        

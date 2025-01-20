@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Sergei Goren</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="calculator">
+        <div id="display" type="text">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/7/77/Pikachu.png" alt="Pikachu image">
+        </div>
+        <div id="buttons">
+            <div class="row1">
+                <button onclick="addNumber(7)">7</button>
+                <button onclick="addNumber(8)">8</button>
+                <button onclick="addNumber(9)">9</button>
+                <button class = "operation_btn" onclick="chooseOperation('+')">+</button>        
+            </div>
+            <div class="row2">
+                <button onclick="addNumber(4)">4</button>
+                <button onclick="addNumber(5)">5</button>
+                <button onclick="addNumber(6)">6</button>
+                <button class = "operation_btn" onclick="chooseOperation('-')">-</button>        
+            </div>
+            <div class="row3">
+                <button onclick="addNumber(1)">1</button>
+                <button onclick="addNumber(2)">2</button>
+                <button onclick="addNumber(3)">3</button>
+                <button class = "operation_btn" onclick="chooseOperation('x')">x</button>        
+            </div>
+            <div class="row4">
+                <button id="clear_btn" class = "clear_btn container" onclick="clearDisplay()">
+                    <span id="pokemon1">C</span>
+                    <img id="charmander"  class="hidden" src="https://upload.wikimedia.org/wikipedia/ru/thumb/5/56/Charmander.png/107px-Charmander.png?20120708121041" alt="Charmander image">
+                </button>
+                <button onclick="addNumber(0)">0</button>
+                <button id="dot_btn" onclick="addDot('.')">.</button>
+                
+                <button class = "operation_btn" onclick="chooseOperation('/')">/</button>        
+            </div>
+            <div class="row5">
+                <button id="submit_btn" class = "submit_btn container" onclick="calculation()">
+                    <span id="pokemon2">=</span>
+                    <img id="squirtle"  class="hidden" src="https://upload.wikimedia.org/wikipedia/ru/5/59/Pok%C3%A9mon_Squirtle_art.png" alt="Squirtle image">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
